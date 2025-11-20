@@ -8,7 +8,7 @@ jobs:
         os: [ubuntu-latest, windows-latest, macOS-latest]
     name: Dotnet build
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
         with:
           fetch-depth: 0
       - name: Setup dotnet
@@ -38,7 +38,7 @@ jobs:
     runs-on: windows-latest
     name: MSBuild build
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
         with:
           fetch-depth: 0
       - name: Add msbuild to PATH
@@ -55,7 +55,7 @@ jobs:
   e2e:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
         with:
           fetch-depth: 0
       - name: Setup dotnet
